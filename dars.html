@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#173a68">
+  <meta name="description" content="Explore the Branch Darses directory for ADSA SUFFA Leadership & Career Camp 2026.">
+  <title>Branch Darses | ADSA SUFFA Career Camp 2026</title>
+
+  <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/logo-data.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html#home" class="brand" aria-label="ADSA SUFFA Home">
+        <img src="images/logo.jpg" alt="Alathurpadi Dars Students Association Logo" class="brand-logo-img">
+        <div class="brand-info">
+          <span class="brand-title">ADSA <span>SUFFA</span></span>
+          <span class="brand-subtitle">Alathurpadi Dars · Career Camp 2026</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html#home" class="nav-link">Home</a></li>
+          <li><a href="index.html#about" class="nav-link">About</a></li>
+          <li><a href="schedule.html" class="nav-link">Schedule</a></li>
+          <li><a href="qualifications.html" class="nav-link">Qualifications</a></li>
+          <li><a href="dars.html" class="nav-link active" aria-current="page" style="white-space: nowrap;">Branch Darses</a></li>
+          <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="register.html" class="btn-nav-gradient">Register Now</a>
+        <a href="admin.html" class="admin-link-btn" title="Admin Dashboard">
+          <span>🔒</span> Admin
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="dars-section" id="dars">
+      <div class="container">
+        <div class="text-center">
+          <div class="section-badge">SUFFA DARS DIRECTORY</div>
+          <h1 class="section-title">Branch Darses <span>(41 Dars)</span></h1>
+          <p class="section-desc">
+            Browse the 41 Darses affiliated with ADSA SUFFA. Search by Dars name, Usthad, or phone number.
+          </p>
+        </div>
+
+        <div class="dars-toolbar">
+          <div class="dars-search-wrap">
+            <span class="dars-search-icon">🔍</span>
+            <input type="text" id="darsSearchInput" class="dars-search-input" placeholder="Search by Dars, Usthad, or phone number..." aria-label="Search Dars directory">
+          </div>
+
+          <select id="darsDistrictFilter" class="dars-district-select" aria-label="Filter by district">
+            <option value="ALL">All districts</option>
+            <option value="Kasaragod">Kasaragod</option>
+            <option value="Kozhikode">Kozhikode</option>
+            <option value="Malappuram">Malappuram</option>
+            <option value="Palakkad">Palakkad</option>
+            <option value="UNSPECIFIED">Not specified</option>
+          </select>
+
+          <div class="dars-count-badge" id="darsCountBadge">41 Dars</div>
+        </div>
+
+        <div class="dars-cards-grid" id="darsCardsContainer"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <div>© 2026 ADSA SUFFA Leadership & Career Camp.</div>
+      <div><a href="index.html#home">Back to camp home</a></div>
+    </div>
+  </footer>
+</body>
+</html>

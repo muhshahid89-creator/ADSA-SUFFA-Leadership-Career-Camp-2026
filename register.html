@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#173a68">
+  <meta name="description" content="Register for the ADSA SUFFA Leadership & Career Camp 2026.">
+  <title>ADSA SUFFA Career Camp 2026 | Register Now</title>
+
+  <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/logo-data.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html#home" class="brand" aria-label="ADSA SUFFA Home">
+        <img src="images/logo.jpg" alt="Alathurpadi Dars Students Association Logo" class="brand-logo-img">
+        <div class="brand-info">
+          <span class="brand-title">ADSA <span>SUFFA</span></span>
+          <span class="brand-subtitle">Alathurpadi Dars · Career Camp 2026</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html#home" class="nav-link">Home</a></li>
+          <li><a href="index.html#about" class="nav-link">About</a></li>
+          <li><a href="schedule.html" class="nav-link">Schedule</a></li>
+          <li><a href="qualifications.html" class="nav-link">Qualifications</a></li>
+          <li><a href="dars.html" class="nav-link" style="white-space: nowrap;">Branch Darses</a></li>
+          <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="register.html" class="btn-nav-gradient" aria-current="page">Register Now</a>
+        <a href="admin.html" class="admin-link-btn" title="Admin Dashboard">
+          <span>🔒</span> Admin
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="register-section" id="register">
+      <div class="container">
+        <div class="text-center" style="margin-bottom: 40px;">
+          <div class="section-badge">ENROLLMENT</div>
+          <h1 class="section-title">Register <span>Now</span></h1>
+          <p class="section-desc" style="color: var(--ink-muted);">
+            Complete the form below to apply for the ADSA SUFFA Leadership &amp; Career Camp 2026.
+          </p>
+        </div>
+
+        <div class="register-box" id="registerBox">
+          <div style="border-bottom: 1px solid var(--border); padding-bottom: 18px; margin-bottom: 22px;">
+            <h2 style="color: var(--primary-dark); font-size: 1.35rem; margin-bottom: 6px;">
+              Student Registration Form
+            </h2>
+            <p style="color: var(--ink-muted); font-size: 0.88rem;">
+              Fields marked with * are required.
+            </p>
+          </div>
+
+          <form id="studentRegForm">
+            <div class="register-form-grid">
+              <div class="form-group col-full">
+                <label for="regName">
+                  <span>Student Full Name</span>
+                  <span class="req">*</span>
+                </label>
+                <input type="text" id="regName" placeholder="e.g., Muhammed Salih K." required>
+              </div>
+
+              <div class="form-group">
+                <label for="regPhone">
+                  <span>Mobile / WhatsApp Number</span>
+                  <span class="req">*</span>
+                </label>
+                <input type="tel" id="regPhone" placeholder="10-digit mobile number" pattern="[0-9]{10}" required>
+              </div>
+
+              <div class="form-group col-full">
+                <label for="regDars">
+                  <span>Select Dars (41 branches)</span>
+                  <span class="req">*</span>
+                </label>
+                <select id="regDars" required></select>
+                <span class="form-note">Choose your Dars from the list.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="regDistrict">
+                  <span>District</span>
+                  <span class="req">*</span>
+                </label>
+                <select id="regDistrict" required>
+                  <option value="">-- Select a district --</option>
+                  <option value="Malappuram">Malappuram</option>
+                  <option value="Kozhikode">Kozhikode</option>
+                  <option value="Palakkad">Palakkad</option>
+                  <option value="Thrissur">Thrissur</option>
+                  <option value="Kannur">Kannur</option>
+                  <option value="Kasaragod">Kasaragod</option>
+                  <option value="Wayanad">Wayanad</option>
+                  <option value="Ernakulam">Ernakulam</option>
+                  <option value="Kollam">Kollam</option>
+                  <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="regClassLevel">Class Level</label>
+                <select id="regClassLevel">
+                  <option value="Ibtida'eyya">Ibtida'eyya</option>
+                  <option value="Mutawassitha">Mutawassitha</option>
+                  <option value="Aaliyah">Aaliyah</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="regUsthad">Dars Usthad Name</label>
+                <input type="text" id="regUsthad" placeholder="Enter your Usthad's name">
+              </div>
+
+            </div>
+
+            <div style="margin-top: 32px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
+              <p style="font-size: 0.82rem; color: var(--ink-muted);">
+                By submitting this form, you agree to the camp terms.
+              </p>
+              <button type="submit" class="btn btn-gradient-pill btn-lg">
+                <span>✓</span> Submit Registration
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="reg-success-card" id="regSuccessCard">
+          <img src="images/logo.jpg" alt="ADSA Logo" class="receipt-logo-img">
+          <h2 style="color: var(--primary-dark); font-size: 1.6rem; margin-bottom: 8px;">
+            Registration Completed Successfully!
+          </h2>
+          <p style="color: var(--ink-muted); font-size: 0.95rem;">
+            Your registration for ADSA SUFFA Leadership &amp; Career Camp 2026 has been received.
+          </p>
+
+          <div class="reg-id-display">
+            REG ID: <span id="successRegId">REG-2026-000</span>
+          </div>
+
+          <div class="reg-details-list">
+            <div class="reg-detail-row">
+              <span>Student Name:</span>
+              <strong id="successName">—</strong>
+            </div>
+            <div class="reg-detail-row">
+              <span>Dars:</span>
+              <strong id="successDars">—</strong>
+            </div>
+            <div class="reg-detail-row">
+              <span>Phone Number:</span>
+              <strong id="successPhone">—</strong>
+            </div>
+            <div class="reg-detail-row">
+              <span>District:</span>
+              <strong id="successDistrict">—</strong>
+            </div>
+          </div>
+
+          <p style="font-size: 0.88rem; color: #475569; margin-bottom: 24px;">
+            Please save your registration number. Further information will be shared via WhatsApp.
+          </p>
+
+          <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
+            <button type="button" class="btn btn-emerald" onclick="window.print()">
+              <span>🖨️</span> Print Receipt
+            </button>
+            <button type="button" class="btn btn-outline" id="regAnotherBtn">
+              + Register Another Student
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div style="display: flex; align-items: center; gap: 14px;">
+            <img src="images/logo.jpg" alt="ADSA Logo" class="footer-logo-img">
+            <div class="footer-brand-title">ADSA <span>SUFFA</span> CAMP 2026</div>
+          </div>
+          <p style="font-size: 0.9rem; line-height: 1.7; color: #94a3b8; margin-top: 8px;">
+            A week-long leadership and career camp for students from 41 Dars branches, organized by Alathurpadi Dars Students Association.
+          </p>
+          <div style="display: flex; gap: 16px; margin-top: 10px; flex-wrap: wrap;">
+            <span style="font-size: 0.88rem; color: var(--gold);">📍 Alathurpadi, Malappuram, Kerala</span>
+            <span style="font-size: 0.88rem; color: #94a3b8;">📞 +91 98471 23401</span>
+            <span style="font-size: 0.88rem; color: #94a3b8;">✉️ info@suffa.adsa.in</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="qualifications.html">Qualifications</a></li>
+            <li><a href="dars.html">Branch Darses</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Admin &amp; Management</h4>
+          <p style="font-size: 0.88rem; color: #94a3b8; margin-bottom: 16px;">
+            The Admin Dashboard provides registration totals, branch Dars details, gallery management, and PDF exports.
+          </p>
+          <a href="admin.html" class="btn btn-primary" style="font-size: 0.85rem; padding: 10px 18px;">
+            <span>🔐</span> Admin Dashboard
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 ADSA SUFFA Leadership &amp; Career Camp. All Rights Reserved.</div>
+        <div style="color: #64748b;">Folder: <code>D:\dars</code></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
