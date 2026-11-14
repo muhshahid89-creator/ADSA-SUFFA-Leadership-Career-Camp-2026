@@ -1,0 +1,13 @@
+{
+  "hosting": {
+    "site": "visual-studio-code-5b6f9-7f896",
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      ".firebaserc",
+      "README.md",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
